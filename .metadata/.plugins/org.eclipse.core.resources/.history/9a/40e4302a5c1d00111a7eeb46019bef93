@@ -1,0 +1,8 @@
+package com.example.entity;
+
+@Entity
+@Table(name = "emp")
+
+public class Employee {
+
+}

@@ -1,0 +1,25 @@
+package com.example.service;
+
+public class EmpService {
+	
+	public List<Employee> getAll() {
+        return repo.findAll();
+    }
+
+    public Employee save(Employee emp) {
+        return repo.save(emp);
+    }
+
+    public void delete(Long id) {
+        repo.deleteById(id);
+    }
+
+    public List<Employee> searchByName(String name) {
+        return repo.findByNameContaining(name);
+    }
+
+    public List<Employee> searchByDepartment(String dept) {
+        return repo.findByDepartment(dept);
+    }
+
+}
